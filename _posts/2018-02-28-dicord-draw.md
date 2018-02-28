@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Node.js] Draw with friends!
+title: Node.js Draw with friends!
 ---
 
 Node.js application deployed with pm2 and Google Cloud instance.
