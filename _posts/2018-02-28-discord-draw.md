@@ -2,10 +2,8 @@
 layout: post
 title: Node.js Draw with friends!
 ---
-Interactive Demo: [http://draw.mwenger.io](http://draw.mwenger.io)
--
--
--
+`Interactive Demo: `[http://draw.mwenger.io](http://draw.mwenger.io)
+---
 ![Example](https://i.imgur.com/jZp7WuZ.png)
 
 -Uses Websockets to render lines concurrently across devices/ browsers!
