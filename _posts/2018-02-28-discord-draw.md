@@ -2,6 +2,12 @@
 layout: post
 title: Node.js Draw with friends!
 ---
+
+
+
+
+
+
 # Interactive Demo
 [http://draw.mwenger.io](http://draw.mwenger.io)
 ![Example](https://i.imgur.com/jZp7WuZ.png)
@@ -15,8 +21,8 @@ Node.js application deployed with pm2 and Google Cloud instance.
 App deployed on PM2 and Google Cloud VM instance
 
 # discord-draw
-Basic drawing application for Discord users.
-example: http://draw.mwenger.io
+Basic drawing application for your users.
+example: http://yourdomain.com
 
 # Install for yourself on Ubuntu 16.04!
 
