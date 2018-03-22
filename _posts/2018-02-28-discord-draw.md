@@ -23,25 +23,22 @@ example: http://yourdomain.com
 
 # Install for yourself on Ubuntu 16.04!
 
-```
-git clone https://github.com/Mattwen/discord-draw.git
-cd discord-draw
-sudo chmod +x server.js
-```
+   git clone https://github.com/Mattwen/discord-draw.git
+   cd discord-draw
+   sudo chmod +x server.js
 
 install required npm packages
 
-```npm install```
+   npm install
     
 check to see if it's running properly
 
-```sudo node server.js```
+   sudo node server.js
     
 deploy on pm2 (you need node env + pm2 installed first)
 
-```
-sudo pm2 start
-pm2 start server.js -n "whatever-you-like"
-```
+   sudo pm2 start
+   pm2 start server.js -n "whatever-you-like"
+
 
 
