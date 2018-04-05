@@ -118,7 +118,7 @@ docker push mattwen/discord-draw:latest
 
 # Docker 2-Step Deploy
 
-If you already have Docker installed on a VM, you can install this image in two steps
+If you already have Docker installed on a VM, you can install this image in two commands
 ```sh
 docker pull mattwen/discord-draw:latest
 docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
