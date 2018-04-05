@@ -34,12 +34,15 @@ Verify the correct version of Node.js
     $ nodejs -v
     v4.2.6
 
-# Clone your Project from Github and install npm dependencies
-
+# Clone your Project from Github and install npm Dependencies
+    
+    $ cd ~
     $ git clone https://github.com/mattwen/discord-draw && cd discord-draw
     $ npm install
     
-# Create the Dockerfile with any Text Editor
+# Create the Dockerfile
+
+With any Text Editor and add the following:
 
     # /home/matt/discord-draw/Dockerfile
     # Gets the latest image of node
@@ -63,8 +66,9 @@ Verify the correct version of Node.js
     CMD [ "npm", "start" ]
     
 # Create .dockerignore
+
+Create a .dockerignore with the following and save
    
-    # Ignore these modules
     node_modules
     npm-debug.log
 
@@ -92,10 +96,13 @@ Should return an HTML response
     Login Succeeded
     
 Push to the public Docker repo, where :latest is the tag name
+
     $ docker push mattwen/discord-draw:latest
     
 # Docker 2 Step Deploy
 If you already have Docker installed on a VM, you can install this image in two steps
+
     $ docker pull mattwen/discord-draw:latest
     $ docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
+    
 visit <host_ip_address>:8080
