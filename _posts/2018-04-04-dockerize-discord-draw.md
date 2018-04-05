@@ -42,7 +42,7 @@ Verify the correct version of Node.js
     
 # Create the Dockerfile
 
-With any Text Editor and add the following:
+With any Text Editor add the following:
 
     # /home/matt/discord-draw/Dockerfile
     # Gets the latest image of node
