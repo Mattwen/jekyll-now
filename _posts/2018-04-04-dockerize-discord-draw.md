@@ -48,28 +48,28 @@ Verify the version of Node.js
 # Create the Dockerfile
 
 With any Text Editor add the following:
-
-    # /home/matt/discord-draw/Dockerfile
-    # Gets the latest image of node
-    FROM node:carbon
+```sh
+# /home/matt/discord-draw/Dockerfile
+# Gets the latest image of node
+FROM node:carbon
     
-    # Create app directory
-    WORKDIR /usr/src/app
+# Create app directory
+WORKDIR /usr/src/app
 
-    # Install app dependencies
-    # A wildcard is used to ensure both package.json AND package-lock.json are copied
-    COPY package*.json ./
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+COPY package*.json ./
 
-    RUN npm install
-    # If you are building your code for production
-    # RUN npm install --only=production
+RUN npm install
+# If you are building your code for production
+# RUN npm install --only=production
 
-    # Bundle app source
-    COPY . .
-    # Run on port 8080
-    EXPOSE 8080
-    CMD [ "npm", "start" ]
-    
+# Bundle app source
+COPY . .
+# Run on port 8080
+EXPOSE 8080
+CMD [ "npm", "start" ]
+```
 # Create .dockerignore
 
 Create a .dockerignore with the following and save
