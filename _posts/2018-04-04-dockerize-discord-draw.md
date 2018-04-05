@@ -88,6 +88,7 @@ Build the image with the name 'mattwen/discord-draw' and a tag
 # Run our Image
     
 This will run the docker container on port 8080, container will restart on reboot
+
     docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
     
 # Verify it's Working
