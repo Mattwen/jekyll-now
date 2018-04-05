@@ -40,8 +40,6 @@ Verify the correct version of Node.js
     
 # Create the Dockerfile (from Node.js Docs)
 
-   $ vim Dockerfile
-    
     # /home/matt/discord-draw/Dockerfile
     # Gets the latest image of node
     FROM node:carbon
@@ -64,9 +62,8 @@ Verify the correct version of Node.js
     CMD [ "npm", "start" ]
     
 # Create .dockerignore
-
-   $ vim .dockerignore
    
+    # Ignore these modules
     node_modules
     npm-debug.log
 
@@ -80,13 +77,13 @@ Verify the correct version of Node.js
     
     $ docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
     
-# Verify it's working
+# Verify it's Working
 
     $ curl 0.0.0.0:8080
     
 Should return an HTML response
 
-# Push to public Docker Hub
+# Push to Public Docker Hub
 
     $ login docker
     Username: mattwen
