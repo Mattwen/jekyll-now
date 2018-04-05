@@ -105,4 +105,4 @@ If you already have Docker installed on a VM, you can install this image in two 
     $ docker pull mattwen/discord-draw:latest
     $ docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
     
-visit <host_ip_address>:8080
+visit \<host_ip_address\>:8080
