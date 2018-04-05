@@ -9,6 +9,7 @@ Here's an example of an app we will deploy: [http://draw.mwenger.io](http://draw
 <br>
 <hr>
 (If you already have Docker you can skip to the end)
+
 # Install Docker
 
     wget -qO- https://get.docker.com | sh
