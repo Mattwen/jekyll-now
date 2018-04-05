@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Node.js Draw with friends!
+title: Deploy a Node.js Drawing App
 ---
 Interactive Demo: [http://draw.mwenger.io](http://draw.mwenger.io)
 
