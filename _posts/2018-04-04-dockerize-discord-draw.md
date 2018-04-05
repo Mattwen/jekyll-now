@@ -12,21 +12,21 @@ Here's an example of an app we will deploy: [http://draw.mwenger.io](http://draw
 
 # Install Docker
 ```sh
-    wget -qO- https://get.docker.com | sh
+wget -qO- https://get.docker.com | sh
 ```
 Add your username to Docker group
 ```sh
-    sudo usermod -aG docker matt
+sudo usermod -aG docker matt
 ```
 Make sure to logout and log back in
 ```sh
-    exit
-    su matt
+exit
+su matt
 ```
 Verify version of Docker
 ```sh
-    docker --version
-    Docker version 18.03.0-ce, build 0520e24
+docker --version
+Docker version 18.03.0-ce, build 0520e24
 ```
 # Install npm & Node.js (Ubuntu 16.04)
 ```sh
@@ -36,14 +36,14 @@ sudo apt-get install npm -y
 ```
 Verify the version of Node.js 
 ```sh
-    nodejs -v
-    v4.2.6
+nodejs -v
+v4.2.6
 ```
 # Clone your Project from Github and install npm Dependencies
 ```sh  
-    cd ~
-    git clone https://github.com/mattwen/discord-draw && cd discord-draw
-    npm install
+cd ~
+git clone https://github.com/mattwen/discord-draw && cd discord-draw
+npm install
 ```
 # Create the Dockerfile
 
@@ -75,41 +75,41 @@ CMD [ "npm", "start" ]
 
 Create a .dockerignore with the following and save
 ```sh
-    node_modules
-    npm-debug.log
+node_modules
+npm-debug.log
 ```
 # Build the Docker image
 
 Build the image with the name 'mattwen/discord-draw' and a tag
 ```sh
-    docker build -t mattwen/discord-draw:latest .
-    Successfully built 76a4c762151b
-    Successfully tagged mattwen/discord-draw:latest
+docker build -t mattwen/discord-draw:latest .
+Successfully built 76a4c762151b
+Successfully tagged mattwen/discord-draw:latest
 ```
 # Run our Image
     
 This will run the docker container on port 8080, container will restart on reboot
 ```sh
-    docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
+docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
 ```
 # Verify it's Working
 
 Should return an HTML response
 ```sh
-    curl 0.0.0.0:8080
+curl 0.0.0.0:8080
 ```
 # (Optional) Push to Public Docker Hub
 
 Log into Docker and enter your credentials, register an account if you don't have one [here](https://hub.docker.com/) 
 ```sh
-    login docker
-    Username: mattwen
-    Password: 
-    Login Succeeded
+login docker
+Username: mattwen
+Password: 
+Login Succeeded
 ```
 Push to the public Docker repo, where :latest is the tag name
 ```sh
-    docker push mattwen/discord-draw:latest
+docker push mattwen/discord-draw:latest
 ```
 <hr>
 
@@ -117,7 +117,7 @@ Push to the public Docker repo, where :latest is the tag name
 
 If you already have Docker installed on a VM, you can install this image in two steps
 ```sh
-    docker pull mattwen/discord-draw:latest
-    docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
+docker pull mattwen/discord-draw:latest
+docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
 ```
 Visit \<host_ip_address\>:8080 to verify it's working! Make sure you create a host exception for tcp:8080
