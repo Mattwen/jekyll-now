@@ -40,8 +40,7 @@ Verify the correct version of Node.js
     
 # Create the Dockerfile (from Node.js Docs)
 
-    $ vim Dockerfile
-    
+   $ vim Dockerfile
     
     # /home/matt/discord-draw/Dockerfile
     # Gets the latest image of node
@@ -66,9 +65,8 @@ Verify the correct version of Node.js
     
 # Create .dockerignore
 
-    $ vim .dockerignore
-    
-    
+   $ vim .dockerignore
+   
     node_modules
     npm-debug.log
 
