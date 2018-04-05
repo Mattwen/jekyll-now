@@ -79,21 +79,26 @@ Create a .dockerignore with the following and save
 
 # Build the Docker image
 
+Build the image with the name 'mattwen/discord-draw' and a tag
+
     docker build -t mattwen/discord-draw:latest .
     Successfully built 76a4c762151b
     Successfully tagged mattwen/discord-draw:latest
     
 # Run our Image
     
+This will run the docker container on port 8080, container will restart on reboot
     docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
     
 # Verify it's Working
 
-    curl 0.0.0.0:8080
-    
 Should return an HTML response
 
-# Push to Public Docker Hub
+    curl 0.0.0.0:8080
+    
+# (Optional) Push to Public Docker Hub
+
+Log into Docker and enter your credentials, register an account if you don't have one [here](https://hub.docker.com/) 
 
     login docker
     Username: mattwen
