@@ -99,7 +99,7 @@ Push to the public Docker repo, where :latest is the tag name
 
     docker push mattwen/discord-draw:latest
     
-# Docker 2 Step Deploy
+# Docker 2-Step Deploy
 If you already have Docker installed on a VM, you can install this image in two steps
 
     docker pull mattwen/discord-draw:latest
