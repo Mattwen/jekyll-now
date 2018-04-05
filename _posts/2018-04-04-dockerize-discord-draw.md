@@ -17,9 +17,10 @@ Add your username to Docker group
     $ exit
     $ su matt
     
-Verify version
+Verify version of Docker
 
     $ docker --version
+    Docker version 18.03.0-ce, build 0520e24
     
 # Install NPM & Node.js
 
@@ -30,7 +31,7 @@ Verify version
 Verify the correct version of Node.js 
 
     $ nodejs -v
-    # v4.2.6
+    v4.2.6
 
 # Clone your Project from Github and install npm dependencies
 
@@ -40,6 +41,7 @@ Verify the correct version of Node.js
 # Create the Dockerfile (from Node.js Docs)
 
     $ vim Dockerfile
+    
     
     # /home/matt/discord-draw/Dockerfile
     # Gets the latest image of node
@@ -65,6 +67,7 @@ Verify the correct version of Node.js
 # Create .dockerignore
 
     $ vim .dockerignore
+    
     
     node_modules
     npm-debug.log
