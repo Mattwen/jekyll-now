@@ -23,13 +23,13 @@ Verify version of Docker
     docker --version
     Docker version 18.03.0-ce, build 0520e24
     
-# Install NPM & Node.js
+# Install npm & Node.js
 
     sudo apt-get update
     sudo apt-get install nodejs -y
     sudo apt-get install npm -y
 
-Verify the correct version of Node.js 
+Verify the version of Node.js 
 
     nodejs -v
     v4.2.6
