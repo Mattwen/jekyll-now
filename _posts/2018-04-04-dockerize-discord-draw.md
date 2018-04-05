@@ -14,6 +14,7 @@ Add your username to Docker group
     $ sudo usermod -aG docker matt
     
 Make sure to logout and log back in
+
     $ exit
     $ su matt
     
