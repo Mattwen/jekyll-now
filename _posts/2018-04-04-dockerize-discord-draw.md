@@ -7,8 +7,7 @@ Want to deploy your app more quickly? No need to install dependencies of Node wh
 
 Here's an example of an app we will deploy: [http://draw.mwenger.io](http://draw.mwenger.io)
 
-\
-\
+<br><br>
 (If you already have Docker you can skip to the end)
 # Install Docker
 
