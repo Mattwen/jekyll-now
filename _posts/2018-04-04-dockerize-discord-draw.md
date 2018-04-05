@@ -13,7 +13,7 @@ Add your username to Docker group
     
     $ sudo usermod -aG docker matt
     
-    # Make sure to logout and log back in
+Make sure to logout and log back in
     $ exit
     $ su matt
     
@@ -38,7 +38,7 @@ Verify the correct version of Node.js
     $ git clone https://github.com/mattwen/discord-draw && cd discord-draw
     $ npm install
     
-# Create the Dockerfile (from Node.js Docs)
+# Create the Dockerfile with any Text Editor
 
     # /home/matt/discord-draw/Dockerfile
     # Gets the latest image of node
@@ -90,6 +90,11 @@ Should return an HTML response
     Password: 
     Login Succeeded
     
-    # Where :latest is the tag
+Push to the public Docker repo, where :latest is the tag name
     $ docker push mattwen/discord-draw:latest
     
+# Docker 2 Step Deploy
+If you already have Docker installed on a VM, you can install this image in two steps
+    $ docker pull mattwen/discord-draw:latest
+    $ docker run --restart=always -p 8080:8080 -d mattwen/discord-draw:latest
+visit <host_ip_address>:8080
