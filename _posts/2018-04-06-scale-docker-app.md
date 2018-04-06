@@ -27,6 +27,6 @@ Add a name and the following information:
 
 Visit the public ip address of your Compute Engine VM and verify it's working!
 
-![Imgur](https://i.imgur.com/5pAgOiE.png)
+![Imgur](https://i.imgur.com/0rIA9fI.png)
 
 Each port resolution now has it's own unique app running inside of it!
