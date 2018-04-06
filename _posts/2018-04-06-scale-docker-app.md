@@ -15,7 +15,7 @@ Review the port numbers
 ```sh
 docker container list -a
 ```
-Docker created the app on ports 32768-32770
+Docker created the app on ports 32768-32770 and directs to internal port 8080 (the port that the app is running on)
 ![Imgur](https://i.imgur.com/WM9gjFC.png)
 
 Create a Google Cloud VPN Exception for the new ports:
