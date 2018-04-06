@@ -5,7 +5,7 @@ title: Scale our Docker App on Multiple Ports
 Want to be able to scale you application so it has mutiple instances of the same app? We can do this by running the app on a particular port.
 
 # Create 3 Docker containers from our Image
-This will assign each instance a random and unused port from Docker named instance\<1-3\>
+This will assign each instance a random and unused port from Docker named instance1, instance2, instance3
 ```sh
 docker run -d -P --name instance1 mattwen/discord-draw:latest
 docker run -d -P --name instance2 mattwen/discord-draw:latest
