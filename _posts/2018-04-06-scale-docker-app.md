@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scale our Docker App on Multiple Ports
+title: Scale our Docker Containers on Multiple Ports
 ---
 Want to be able to scale you application so it has mutiple instances of the same app? We can do this by running the app on a particular port.
 
