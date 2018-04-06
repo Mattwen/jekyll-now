@@ -19,6 +19,7 @@ Docker created the app on ports 32768-32770 and directs to internal port 8080 (t
 
 ![Imgur](https://i.imgur.com/WM9gjFC.png)
 
+Inside Google Cloud Dashboard > Hamburger(Top Left corner) > VPC Network > Firewall Rules
 Create a Google Cloud VPN Exception for the new ports:
 
 ![Imgur](https://i.imgur.com/YP9JoEM.png)
