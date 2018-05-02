@@ -3,8 +3,6 @@ layout: post
 title: Create Persistant Ubuntu Shell and Install Ruby
 ---
 
-<br>
-<hr>
 (If you already have Docker you can skip to the end)
 
 # Install Docker
