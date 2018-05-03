@@ -39,6 +39,7 @@ root@40545a72cb07:/#
 
 Install your desired depenencies
 ```sh
+apt-get update
 apt-get install build-essential -y
 apt-get install ruby-full -y
 apt-get install git -y
