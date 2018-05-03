@@ -37,7 +37,7 @@ rubyshell
 root@40545a72cb07:/# 
 ```
 
-Install your desired depenencies
+Install your desired depenencies inside the shell
 ```sh
 apt-get update
 apt-get install build-essential -y
