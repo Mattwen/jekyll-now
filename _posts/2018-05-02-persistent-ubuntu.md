@@ -61,5 +61,6 @@ To start a new container from that newly created image:
 docker run --name rubyshell2 --restart=always -it rubyshell:latest /bin/bash
 root@11f2cfa4aab6:/# 
 ```
-It will have everything configured from your last image. If you want them to share data create a persistant shared volume
-Creates alias for all your containers or create a .bashrc function that accepts a name parameter for your container
+It will have everything configured from your last image. If you want them to share data create a persistant shared volume.
+<br>
+Create alias for all your containers or create a .bashrc function that accepts a name parameter for your container
