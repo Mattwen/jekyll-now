@@ -84,11 +84,11 @@ Too long to inline so client.js can be found here: [link](https://github.com/Mat
 Basically, client.js handles all client side stuff like drawing the canvas, drawing lines defined by socket, recording mouse movements, using form controls to change brush size, color, and etc.
 
 # Install for yourself on Ubuntu 16.04!
-
+```sh
     git clone https://github.com/Mattwen/discord-draw.git
     cd discord-draw
     sudo chmod +x server.js
-
+```
 install required npm packages
 ```sh
     npm install
