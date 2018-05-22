@@ -23,6 +23,9 @@ Basic drawing application for your users.
 example: http://yourdomain.com
 
 # Server.js
+line_history has three objerct types: Size defines the size the point, Color defines the color of the point, and Data is simply the X, Y coordinates of line.
+
+socket.emit broadcasts the objects to all connected clients on the browser so everything is synchronized.
 
 ```js
 # Store line history
@@ -33,7 +36,6 @@ io.on('connection', function (socket) {
     // first send the history to the new client
     for (var i in line_history) {
         socket.emit('draw_line', {size: line_history[i].Size, color: line_history[i].Color,  line: line_history[i].Data});
-        //console.log(line_history[i]);
     }
     // add handler for message type "draw_line".
     socket.on('draw_line', function (data) {
@@ -51,10 +53,9 @@ io.on('connection', function (socket) {
         if(line_history.length >= 2500){
             line_history.splice(0, 150);
         }
-
+        
         // send line to all clients
         io.emit('draw_line', { size: data.size, color: data.color, line: data.line });
-        //console.log(line_history.length);
     });
 });
 ```
@@ -74,6 +75,12 @@ server.listen(8080);
 app.use(express.static(__dirname + '/'));
 console.log("Server running on 127.0.0.1:8080");
 ```
+
+# Client.js
+
+Too long to inline so client.js can be found here: [link](https://github.com/Mattwen/discord-draw/blob/master/client.js)
+
+Basically, client.js handles all client side stuff like drawing the canvas, drawing lines defined by socket, recording mouse movements, using form controls to change brush size, color, and etc.
 
 # Install for yourself on Ubuntu 16.04!
 
