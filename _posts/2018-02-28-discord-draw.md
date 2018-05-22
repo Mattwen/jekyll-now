@@ -24,7 +24,10 @@ Basic drawing application for your users.
 example: http://yourdomain.com
 
 # Server.js
-line_history has three objerct types: Size defines the size the point, Color defines the color of the point, and Data is simply the X, Y coordinates of line.
+line_history has three object types types: 
+* Size defines the size the point, 
+* Color defines the color of the point, 
+* Data is simply the X, Y coordinates of line.
 
 socket.emit broadcasts the objects to all connected clients on the browser so everything is synchronized.
 
