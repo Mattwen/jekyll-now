@@ -3,14 +3,15 @@ layout: post
 title: Deploy a Node.js Drawing App
 ---
 Interactive Demo: [http://draw.mwenger.io](http://draw.mwenger.io)
+Github Repository: [link](https://github.com/Mattwen/discord-draw)
 
 ![Example](https://i.imgur.com/jZp7WuZ.png)
 
 Uses Websockets to render lines concurrently across devices/ browsers!
 
-Stores up to 2500 lines on the server. Sorry if you want it to store more than need to use a beefier Cloud instance. Or maybe I should cache the lines in the browser?
-
-Node.js application deployed with pm2 and Google Cloud instance.
+* Stores up to 2500 lines on the server before it starts cleaning house.
+* Sorry if you want it to store more than need to use a beefier cloud instance.
+* Node.js application deployed with PM2 and Google Cloud instance.
 
 PM2 is really easy to install and can even deploy Python and Ruby apps! Basically any app that can be ran at a bash command line can be ran with PM2
 
@@ -20,6 +21,59 @@ App deployed on PM2 and Google Cloud VM instance
 # discord-draw
 Basic drawing application for your users.
 example: http://yourdomain.com
+
+# Server.js
+
+```js
+# Store line history
+var line_history = [];
+
+// event-handler for new incoming connections
+io.on('connection', function (socket) {
+    // first send the history to the new client
+    for (var i in line_history) {
+        socket.emit('draw_line', {size: line_history[i].Size, color: line_history[i].Color,  line: line_history[i].Data});
+        //console.log(line_history[i]);
+    }
+    // add handler for message type "draw_line".
+    socket.on('draw_line', function (data) {
+
+        // add input to line_history objects
+        var input = {
+            'Size': data.size, // size of the brush
+            'Color': data.color, // color of the line
+            'Data': data.line // position of the line
+        }
+        // push objects to add
+        line_history.push(input);
+
+        // remove the first 150 objects from the array list if the total array list exceeds 2500 entries
+        if(line_history.length >= 2500){
+            line_history.splice(0, 150);
+        }
+
+        // send line to all clients
+        io.emit('draw_line', { size: data.size, color: data.color, line: data.line });
+        //console.log(line_history.length);
+    });
+});
+```
+
+Uses Express and socketIo to create a websocket and runs on localhost and port 8080
+```js
+var express = require('express'),
+    app = express(),
+    http = require('http'),
+    socketIo = require('socket.io');
+
+// start webserver on port 8080
+var server = http.createServer(app);
+var io = socketIo.listen(server);
+server.listen(8080);
+// add directory with our static files
+app.use(express.static(__dirname + '/'));
+console.log("Server running on 127.0.0.1:8080");
+```
 
 # Install for yourself on Ubuntu 16.04!
 
