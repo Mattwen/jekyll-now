@@ -85,22 +85,22 @@ Basically, client.js handles all client side stuff like drawing the canvas, draw
 
 # Install for yourself on Ubuntu 16.04!
 ```sh
-    git clone https://github.com/Mattwen/discord-draw.git
-    cd discord-draw
-    sudo chmod +x server.js
+git clone https://github.com/Mattwen/discord-draw.git
+cd discord-draw
+sudo chmod +x server.js
 ```
 install required npm packages
 ```sh
-    npm install
+npm install
 ```    
 check to see if it's running properly
 ```sh
-    sudo node server.js
+sudo node server.js
 ```    
 deploy on pm2 (you need node env + pm2 installed first)
 ```sh
-    sudo pm2 start
-    pm2 start server.js -n "whatever-you-like"
+sudo pm2 start
+pm2 start server.js -n "whatever-you-like"
 ```
 
 
