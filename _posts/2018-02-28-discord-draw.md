@@ -28,7 +28,7 @@ line_history has three objerct types: Size defines the size the point, Color def
 
 socket.emit broadcasts the objects to all connected clients on the browser so everything is synchronized.
 
-```javascript
+```python
 # Store line history
 var line_history = [];
 
@@ -62,7 +62,7 @@ io.on('connection', function (socket) {
 ```
 
 Uses Express and socketIo to create a websocket and runs on localhost and port 8080
-```javascript
+```python
 var express = require('express'),
     app = express(),
     http = require('http'),
