@@ -28,7 +28,7 @@ line_history has three objerct types: Size defines the size the point, Color def
 
 socket.emit broadcasts the objects to all connected clients on the browser so everything is synchronized.
 
-```js
+```
 # Store line history
 var line_history = [];
 
