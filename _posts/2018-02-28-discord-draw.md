@@ -90,17 +90,17 @@ Basically, client.js handles all client side stuff like drawing the canvas, draw
     sudo chmod +x server.js
 
 install required npm packages
-
+```sh
     npm install
-    
+```    
 check to see if it's running properly
-
+```sh
     sudo node server.js
-    
+```    
 deploy on pm2 (you need node env + pm2 installed first)
-
+```sh
     sudo pm2 start
     pm2 start server.js -n "whatever-you-like"
-
+```
 
 
