@@ -19,10 +19,6 @@ PM2 is really easy to install and can even deploy Python and Ruby apps! Basicall
 ![PM2 App](https://i.imgur.com/oYCNC7c.png)
 App deployed on PM2 and Google Cloud VM instance
 
-# discord-draw
-Basic drawing application for your users.
-example: http://yourdomain.com
-
 # Server.js
 line_history has three object types types: 
 * Size defines the size the point, 
