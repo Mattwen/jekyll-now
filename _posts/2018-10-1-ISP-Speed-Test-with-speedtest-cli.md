@@ -56,3 +56,5 @@ Run the crontab bash script once an hour every day
 ```sh
 0 * * * * /home/rushingadmin/speedtest-cron.sh
 ```
+
+Data visualization was created with Excel and I added filters to hide outlier data greater than 100 mpbs
