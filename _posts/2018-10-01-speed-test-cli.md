@@ -51,7 +51,7 @@ Open crontab
 $ crontab -e
 ```
 
-Run the crontab once an hour every day
+Run the crontab bash script once an hour every day
 ```sh
 0 * * * * /home/rushingadmin/speedtest-cron.sh
 ```
