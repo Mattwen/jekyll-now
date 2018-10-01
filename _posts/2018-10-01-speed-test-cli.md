@@ -7,6 +7,9 @@ Crontab runs the speedtest.py every hour of the day and appends to the end of th
 
 Github Repository for speedtest-cli: [link](https://github.com/sivel/speedtest-cli)
 
+[larger image link](https://i.imgur.com/3MDFtva.png)
+![Speed Test Data](https://i.imgur.com/3MDFtva.png)
+
 This code writes to a CSV in a SMB share called speedtest.csv
 
 When I created the scatterplot above I converted to an .xlsx and selected the data and inserted the chart.
