@@ -5,7 +5,7 @@ title: Visualizing speedtest-cli Data
 
 Crontab runs the speedtest.py every hour of the day and appends to the end of the CSV.
 
-
+[larger image link](https://i.imgur.com/3MDFtva.png)
 ![Speed Test Data](https://i.imgur.com/3MDFtva.png)
 
 Github Repository for speedtest-cli: [link](https://github.com/sivel/speedtest-cli)
