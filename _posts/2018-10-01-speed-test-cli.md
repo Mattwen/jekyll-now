@@ -10,6 +10,10 @@ Github Repository for speedtest-cli: [link](https://github.com/sivel/speedtest-c
 
 
 
+
+
+
+
 [larger image link](https://i.imgur.com/3MDFtva.png)
 ![Speed Test Data](https://i.imgur.com/3MDFtva.png)
 
