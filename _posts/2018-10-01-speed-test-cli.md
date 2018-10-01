@@ -37,3 +37,10 @@ try:
 except:
     pass
 ```
+
+speedtest-cron.sh
+```sh
+#!/bin/bash
+sudo python /home/rushingadmin/speedtest.py >> /samba/data/speedtest.csv
+```
+This bash script simply appends the output the from the speedtest script to the end of the CSV
