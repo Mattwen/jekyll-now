@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
   max-width: 740px;
   padding: 0 10px;
-  width: 100% !important;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -253,7 +253,7 @@ nav {
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
+    margin: 2.0em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
