@@ -11,8 +11,8 @@ This code writes to a CSV in a SMB share called speedtest.csv
 
 When I created the scatterplot above I converted to an .xlsx and selected the data and inserted the chart.
 
-[larger image link](https://i.imgur.com/3MDFtva.png)
 ![Speed Test Data](https://i.imgur.com/3MDFtva.png)
+[larger image link](https://i.imgur.com/3MDFtva.png)
 
 speedtest.py
 
