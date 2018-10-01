@@ -7,6 +7,9 @@ title: Visualizing speedtest-cli Data
 
 Github Repository for speedtest-cli: [link](https://github.com/sivel/speedtest-cli)
 
+Crontab runs the speedtest.py every hour of the day and appends to the end of the CSV.
+
+speedtest.py
 ```python
 import os
 import re
@@ -35,4 +38,4 @@ except:
 
 This code writes to a CSV in a SMB share called speedtest.csv
 
-When I created the scatterplot above I converted to an xlsx and selected the data and inserted the chart.
+When I created the scatterplot above I converted to an .xlsx and selected the data and inserted the chart.
