@@ -44,3 +44,14 @@ speedtest-cron.sh
 sudo python /home/rushingadmin/speedtest.py >> /samba/data/speedtest.csv
 ```
 This bash script simply appends the output the from the speedtest script to the end of the CSV
+
+Open crontab
+
+```
+$ crontab -e
+```
+
+Run the crontab once an hour every day
+```sh
+0 * * * * /home/rushingadmin/speedtest-cron.sh
+```
