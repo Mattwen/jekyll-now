@@ -8,7 +8,7 @@ System Administrator
 
 ### More Information
 
-This blog is a place for me to document and progress in the world of infrastructure and devops!
+This blog is simply a place to share fun things!
 
 ### Contact me
 
