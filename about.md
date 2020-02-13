@@ -10,6 +10,6 @@ System Administrator
 
 This blog is simply a place to share fun things!
 
-### Contact me
+### Contact
 
 [matthewwenger@live.com](mailto:matthewwenger@live.com)
